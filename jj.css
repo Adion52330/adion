@@ -1,0 +1,33 @@
+.btn-danger {
+  padding: 5px;
+  border-radius: 5px;
+  color: white;
+  background-color: #ff0022;
+}
+
+.btn-dark {
+  padding: 5px;
+  border-radius: 5px;
+  color: white;
+  background-color: #030211;
+}
+
+.btn-warning {
+  padding: 5px;
+  border-radius: 5px;
+  color: white;
+  background-color: #ffae00;
+}
+
+.text-danger {
+  color: #ff0022;
+}
+
+.text-dark {
+  color: #030211;
+}
+
+.text-warning {
+  color: #ffae00;
+}
+/*# sourceMappingURL=jj.css.map */

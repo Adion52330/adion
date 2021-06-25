@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="tut.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <link rel="shortcut icon" href="images/log.png" type="image/x-icon" />
+    <link rel="stylesheet" href="prism.css" />
+
+    <title>Adion | Code Cheatsheets</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img
+              src="images/log.png"
+              alt=""
+              width="30px"
+              height="30px"
+              class="d-inline-block align-text-top"
+            />
+            <strong style="text-transform: uppercase">Adion</strong>
+          </a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  aria-current="page"
+                  id="fade"
+                  style="font-weight: bolder"
+                  href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="tut.html"
+                  id="fade"
+                  style="font-weight: bolder"
+                  >Tutorials</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="odwb.html"
+                  id="fade"
+                  style="font-weight: bolder"
+                  >Other Dummy Websites to Visit</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active text-danger"
+                  href="cc.html"
+                  id="fade"
+                  style="font-weight: bolder"
+                  >Code Cheatsheets</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="pdc.html"
+                  id="fade"
+                  style="font-weight: bolder"
+                  >Pre-Defined Classes</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="#"
+                  id="fade"
+                  style="font-weight: bolder"
+                  >Contact Me</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section
+      id="main"
+      style="
+        margin: 76px 30px 30px 30px;
+        border: darkkhaki 10px groove;
+        padding: 10px;
+      "
+    >
+      <center><h1>Code Cheatsheets</h1></center>
+      <ul>
+        <li>
+          HTML Boiler Plate
+          <div
+            style="
+              padding: 20px;
+              margin: 20px;
+              background-color: #e7e9eb;
+              border-radius: 10px;
+            "
+          >
+            <pre class="language-html"><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+                        
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+          </div>
+        </li>
+        <br />
+        <li>
+          <p>Marquee Tag</p>
+          <div
+            style="
+              padding: 20px;
+              margin: 20px;
+              background-color: #e7e9eb;
+              border-radius: 10px;
+            "
+          >
+            <pre
+              class="language-html"
+            ><code>&lt;marquee behavior="" direction=""&gt;&lt;/marquee&gt;</code></pre>
+          </div>
+        </li>
+        <br />
+        <li>
+          <p>Javascript OOPs</p>
+          <div
+            style="
+              padding: 20px;
+              margin: 20px;
+              background-color: #e7e9eb;
+              border-radius: 10px;
+            "
+          >
+            <pre class="language-javascript"><code>class ClassName{
+    costructor(param1, param2){
+        this.param1 = param1;
+        this.param2 = param2;
+    }
+}</code></pre>
+          </div>
+        </li>
+        <br />
+        <li>
+          <p>PHP Localhost Connect</p>
+          <div
+            style="
+              padding: 20px;
+              margin: 20px;
+              background-color: #e7e9eb;
+              border-radius: 10px;
+            "
+          >
+            <pre class="language-php"><code>&lt;?php
+    $servername = "localhost";                
+    $username = "root";                
+    $password = "";
+    
+    $con = mysqli_connect($servername, $username, $password);
+    if (!$con) {
+        # code...
+        die("Sorry unable to connect because of" . mysqli_connect_error());
+    }
+
+    $firstname = $_POST['frst'];
+    $lastname = $_POST['lst'];
+
+    $sql = "INSERT INTO `name`.`tableName` (`First Name`, `Last Name`) VALUES ('$firstname', '$lastname')";
+
+    if ($con->query($sql) == true) {
+        # code...
+        echo "<h1>Successfully Sent</h1>";
+    } else {
+        echo "An error occurred<br /> $sql <br/> $con->error";
+    }
+
+    $con->close();
+?&gt;</code></pre>
+          </div>
+        </li>
+        <br />
+        <li>
+          <p>PHP Localhost Connect</p>
+          <div
+            style="
+              padding: 20px;
+              margin: 20px;
+              background-color: #e7e9eb;
+              border-radius: 10px;
+            "
+          >
+            <pre class="language-css"><code>@keyframes animationName{
+    from{
+        anything: whatever;
+    }                
+    to{
+        anything: whatever;
+    }                
+}</code></pre>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <a href="style.css" download="w3logo">download</a>
+  </body>
+  <script src="prism.js"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"
+  ></script>
+  <script src="index.js"></script>
+  <script src="//code.jquery.com/jquery-3.6.0.min.js"></script>
+</html>

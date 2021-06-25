@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <link rel="shortcut icon" href="images/log.png" type="image/x-icon" />
+    <link rel="stylesheet" href="prism.css" />
+
+    <title>Adion | HTML Learn</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img
+              src="images/log.png"
+              alt=""
+              width="30px"
+              height="30px"
+              class="d-inline-block align-text-top"
+            />
+            <strong style="text-transform: uppercase">Adion</strong>
+          </a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  aria-current="page"
+                  id="fade"
+                  style="font-weight: bolder"
+                  href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active text-danger"
+                  href="tut.html"
+                  id="fade"
+                  style="font-weight: bolder"
+                  >Tutorials</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="odwb.html"
+                  id="fade"
+                  style="font-weight: bolder"
+                  >Other Dummy Websites to Visit</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="cc.html"
+                  id="fade"
+                  style="font-weight: bolder"
+                  >Code Cheatsheets</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="pdc.html"
+                  id="fade"
+                  style="font-weight: bolder"
+                  >Pre-Defined Classes</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="#"
+                  id="fade"
+                  style="font-weight: bolder"
+                  >Contact Me</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <nav>
+      <div
+        style="
+          margin: 56px 0px 0 0px;
+          padding: 5px 0 5px 0;
+          background-image: linear-gradient(to right, #cc2b5e, #753a88);
+        "
+        class="fixed-bottom"
+      >
+        <center>
+          <div class="dropdown">
+            <button
+              class="btn btn-danger dropdown-toggle"
+              type="button"
+              id="dropdownMenuButton1"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Content
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="#p1">Introduction</a></li>
+              <li><a class="dropdown-item" href="#p2">Headings</a></li>
+              <li><a class="dropdown-item" href="#p3">Elements</a></li>
+              <li><a class="dropdown-item" href="#p4">Pragraphs</a></li>
+              <li><a class="dropdown-item" href="#p5">Attributes</a></li>
+            </ul>
+          </div>
+        </center>
+      </div>
+    </nav>
+    <section
+      id="p1"
+      style="
+        margin: 76px 30px 30px 30px;
+        border: green 7px solid;
+        padding: 20px;
+      "
+    >
+      <h3>What is HTML?</h3>
+      <h4>
+        HTML stands for Hyper Text Markup Language HTML is the standard markup
+        language for creating Web pages HTML describes the structure of a Web
+        page HTML consists of a series of elements HTML elements tell the
+        browser how to display the content HTML elements label pieces of content
+        such as "this is a heading", "this is a paragraph", "this is a link",
+        etc.
+      </h4>
+      <br /><br />
+      <h3>How to make an HTML Document?</h3>
+      <h4>
+        To make an HTML document you just need to make a new text file in your
+        computer(right_click/new/text_document) and write the name of the
+        document and add a <code>.html</code> extension after the name.
+      </h4>
+      <br /><br />
+      <h3>ExampleTry</h3>
+      <div style="padding: 20px; margin: 20px; background-color: honeydew">
+        <pre class="language-html"><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+            
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+      </div>
+      <h4>Example Explained:</h4>
+      <ul>
+        <li>
+          The <code>&lt;!DOCTYPE html&gt;</code> declaration defines that this
+          document is an HTML5 document
+        </li>
+        <li>
+          The <code>&lt;html&gt;</code> element is the root element of an HTML
+          page
+        </li>
+        <li>
+          The <code>&lt;head&gt;</code> element contains meta information about
+          the HTML page
+        </li>
+        <li>
+          The <code>&lt;title&gt;</code> element specifies a title for the HTML
+          page (which is shown in the browser's title bar or in the page's tab)
+        </li>
+        <li>
+          The <code>&lt;body&gt;</code> element defines the document's body, and
+          is a container for all the visible contents, such as headings,
+          paragraphs, images, hyperlinks, tables, lists, etc.
+        </li>
+        <li>The <code>&lt;h1&gt;</code> element defines a large heading</li>
+        <li>The <code>&lt;p&gt;</code> element defines a paragraph</li>
+      </ul>
+      <br />
+      <hr />
+      <br />
+      <h1>What is an HTML Element?</h1>
+      <p>
+        An HTML element is defined by a start tag, some content, and an end tag:
+      </p>
+      <h4>
+        <pre
+          class="language-html"
+        ><code>&lt;tagname&gt;Content goes here&lt;/tagname&gt;</code></pre>
+      </h4>
+    </section>
+    <section
+      id="p2"
+      style="
+        margin: 36px 30px 30px 30px;
+        border: green 7px solid;
+        padding: 20px;
+      "
+    >
+      <h2>HTML Headings</h2>
+      <h4>
+        HTML headings are defined with the <code>&lt;h1&gt;</code> to
+        <code>&lt;h6&gt;</code> tags.
+        <br />
+        <code>&lt;h1&gt;</code> defines the most important heading.
+        <code>&lt;h6&gt;</code> defines the least important heading:
+      </h4>
+      <div style="padding: 20px; margin: 20px; background-color: honeydew">
+        <h1><code>&lt;h1&gt;</code>H1 Heading<code>&lt;/h1&gt;</code></h1>
+        <h2><code>&lt;h2&gt;</code>H2 Heading<code>&lt;/h2&gt;</code></h2>
+        <h3><code>&lt;h3&gt;</code>H3 Heading<code>&lt;/h3&gt;</code></h3>
+        <h4><code>&lt;h4&gt;</code>H4 Heading<code>&lt;/h4&gt;</code></h4>
+        <h5><code>&lt;h5&gt;</code>H5 Heading<code>&lt;/h5&gt;</code></h5>
+        <h6><code>&lt;h6&gt;</code>H6 Heading<code>&lt;/h6&gt;</code></h6>
+      </div>
+    </section>
+    <section
+      id="p3"
+      style="
+        margin: 36px 30px 30px 30px;
+        border: green 7px solid;
+        padding: 20px;
+      "
+    >
+      <h1>HTML Elements</h1>
+      <hr />
+      <p>
+        An HTML element is defined by a start tag, some content, and an end tag.
+      </p>
+      <hr />
+      <br />
+      <h2><code>&lt;tagname&gt;</code> - This is called starting tagname.</h2>
+      <h2><code>&lt;/tagname&gt;</code> - This is called ending tagname.</h2>
+      <br />
+      <p class="text-warning">
+        Please see the little difference of forward slash(/) between the ending
+        tag and starting tag.
+      </p>
+      <h5 class="text-info">
+        In almost all the cases a starting tag and and an ending tag is placed
+        and in between there is the content.
+      </h5>
+      <h5 class="text-info">You can also make nested tags for example:.</h5>
+      <div style="padding: 20px; margin: 20px; background-color: honeydew">
+        <pre class="language-html"><code>&lt;h1&gt;
+  &lt;p&gt;
+    &lt;div&gt;&lt;/div&gt;
+  &lt;/p&gt;
+&lt;/h1&gt;</code></pre>
+      </div>
+      <h5 class="text-info">
+        Some elements or tags does not require any ending tag such as
+        <code>&lt;br&gt;</code> and <code>&lt;hr&gt;</code>. hr gives an
+        horizontal line and br gives some spacing.
+      </h5>
+    </section>
+    <section
+      id="p4"
+      style="
+        margin: 36px 30px 30px 30px;
+        border: green 7px solid;
+        padding: 20px;
+      "
+    >
+      <h1>HTML Paragraphs</h1>
+      <hr />
+      <p>
+        A paragraph always starts on a new line, and is usually a block of text.
+      </p>
+      <hr />
+      <h6>
+        The HTML <code>&lt;p&gt;</code> element defines a paragraph.
+        <br />
+        A paragraph always starts on a new line, and browsers automatically add
+        some white space (a margin) before and after a paragraph.
+      </h6>
+      <div style="padding: 20px; margin: 20px; background-color: honeydew">
+        <h4>Example</h4>
+        <pre class="language-html"><code>&lt;p&gt;This is a paragraph&lt;/p&gt;
+&lt;p&gt;This is another paragraph&lt;/p&gt;</code></pre>
+        <h5>Result:</h5>
+        <p>This is a paragraph</p>
+        <p>This is another paragraph</p>
+      </div>
+      <h1>The Poem Problem</h1>
+      <h4>This poem will display on a single line:</h4>
+      <div style="padding: 20px; margin: 20px; background-color: honeydew">
+        <pre class="language-html">
+<code>&lt;p&gt;
+  My Bonnie lies over the ocean.
+
+  My Bonnie lies over the sea.
+          
+  My Bonnie lies over the ocean.
+          
+  Oh, bring back my Bonnie to me.
+&lt;/p&gt;</code>
+        </pre>
+        <h3>Result:</h3>
+        <h5>
+          <p>
+            My Bonnie lies over the ocean. My Bonnie lies over the sea. My
+            Bonnie lies over the ocean. Oh, bring back my Bonnie to me.
+          </p>
+        </h5>
+      </div>
+      <h1>Solution:</h1>
+      <h3>Use the <code>&lt;pre&gt;</code> element.</h3>
+      <div style="padding: 20px; margin: 20px; background-color: honeydew">
+        <pre class="language-html"><code>&lt;pre&gt;
+  My Bonnie lies over the ocean.
+        
+  My Bonnie lies over the sea.
+        
+  My Bonnie lies over the ocean.
+        
+  Oh, bring back my Bonnie to me.
+&lt;/pre&gt;</code></pre>
+        <h1>Result:</h1>
+        <h3>
+          <pre>
+          My Bonnie lies over the ocean.
+        
+          My Bonnie lies over the sea.
+        
+          My Bonnie lies over the ocean.
+        
+          Oh, bring back my Bonnie to me.
+        </pre
+          >
+        </h3>
+      </div>
+    </section>
+    <section
+      id="p5"
+      style="
+        margin: 36px 30px 30px 30px;
+        border: green 7px solid;
+        padding: 20px;
+      "
+    >
+      <h1>HTML Attributes</h1>
+      <hr />
+      <p>HTML attributes provide additional information about HTML elements.</p>
+      <hr />
+      <ul>
+        <li>All HTML elements can have attributes</li>
+        <li>Attributes provide additional information about elements</li>
+        <li>Attributes are always specified in the start tag</li>
+        <li>Attributes usually come in name/value pairs like: name="value"</li>
+      </ul>
+      <hr />
+      <h1>The HREF Attr</h1>
+      <h4>
+        The href atrribute is used in tag <code>&lt;a&gt;</code>. It provides a
+        link.
+      </h4>
+      <div style="padding: 20px; margin: 20px; background-color: honeydew">
+        <h2>ExampleTry</h2>
+        <pre
+          class="language-html"
+        ><code>&lt;a href="https://google.com"&gt;Click Me&lt;/a&gt;</code></pre>
+        <h1>Result:</h1>
+        <h4><a href="https://google.com">Click Me</a></h4>
+      </div>
+      <hr />
+      <h1>The <code>src</code> Attr</h1>
+      <p>
+        The <code>&lt;img&gt;</code> tag is used to embed an image in an HTML
+        page. The src attribute specifies the path to the image to be displayed:
+      </p>
+      <div style="padding: 20px; margin: 20px; background-color: honeydew">
+        <h2>ExampleTry</h2>
+        <pre
+          class="language-html"
+        ><code>&lt;img src="images/log.jpg"&gt;</code></pre>
+        <p class="text-info">
+          Please note that img tag doesnt require a closing tag.
+        </p>
+        <h1>Result:</h1>
+        <img src="images/log.png" alt="" />
+      </div>
+      <hr />
+      <h1>The <code>width</code> and <code>height</code> Attrs</h1>
+      <p>
+        The <code>&lt;img&gt;</code> tag should also contain the width and
+        height attributes, which specifies the width and height of the image (in
+        pixels):
+      </p>
+      <div style="padding: 20px; margin: 20px; background-color: honeydew">
+        <h2>ExampleTry:</h2>
+        <pre
+          class="language-html"
+        ><code>&lt;img src="images/log.png" width="100px" height="100px"&gt;</code></pre>
+        <h1>Result:</h1>
+        <img src="images/log.png" alt="" width="100px" height="100px" />
+      </div>
+    </section>
+    <section
+      style="
+        margin: 36px 30px 76px 30px;
+        border: green 7px solid;
+        padding: 20px;
+      "
+    >
+      <h1>More is on the way! Till then practice.</h1>
+    </section>
+  </body>
+  <script src="prism.js"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"
+  ></script>
+  <script src="index.js"></script>
+  <script src="//code.jquery.com/jquery-3.6.0.min.js"></script>
+</html>

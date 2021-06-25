@@ -1,0 +1,31 @@
+#fade:hover {
+  color: lightslategray;
+}
+
+#aboutme {
+  padding: 30px 0 30px 0;
+  border-bottom: 14px ridge rgb(11, 11, 145);
+}
+
+body {
+  #aboutme,
+  #tutorials {
+    margin-top: 40px;
+  }
+}
+
+@keyframes fader {
+  from {
+    content: " ";
+  }
+  to {
+    content: "| Let's Learn Coding |";
+  }
+}
+
+#cards {
+  background-color: lightgray;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-bottom: gold 10px groove;
+}

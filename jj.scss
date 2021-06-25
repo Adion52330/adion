@@ -1,0 +1,31 @@
+$warning: rgb(255, 174, 0);
+$danger: rgb(255, 0, 34);
+$dark: rgb(3, 2, 17);
+
+.btn-danger {
+  padding: 5px;
+  border-radius: 5px;
+  color: white;
+  background-color: $danger;
+}
+.btn-dark {
+  padding: 5px;
+  border-radius: 5px;
+  color: white;
+  background-color: $dark;
+}
+.btn-warning {
+  padding: 5px;
+  border-radius: 5px;
+  color: white;
+  background-color: $warning;
+}
+.text-danger {
+  color: $danger;
+}
+.text-dark {
+  color: $dark;
+}
+.text-warning {
+  color: $warning;
+}
